@@ -1,0 +1,34 @@
+{
+  "name": "Sharingan Rename Bot",
+  "description": "Telegram's best Open Source Rename Bot. Create your Fork now.",
+  "logo": "https://p1.hiclipart.com/preview/401/429/117/sharingan-all-files-mangekyo-sharingan.jpg",
+  "keywords": [
+    "telegram",
+    "best",
+    "open",
+    "source",
+    "Rename"
+  ],
+  "success_url": "https://t.me/cartoon_seriesz",
+  "website": "https://github.com/dakshkohli23",
+  "repository": "https://github.com/dakshkohli23/Sharingan-Rename-Bot",
+  "env": {
+    "WEBHOOK": {
+      "description": "Setting this to ANYTHING will enable webhooks when in env mode",
+      "value": "ANYTHING"
+    },
+    "TG_BOT_TOKEN": {
+      "description": "Your bot token, as a string.",
+      "value": ""
+    },
+    "UPDATE_CHANNEL": {
+      "description": "For Force Subscribe. Paste your Update channel USERNAME (without @).. Also Make The Bot Admin In That Channel!! ",
+      "value": ""
+    },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}

@@ -9,7 +9,9 @@
     "source",
     "AI"
   ],
-  "repository": "https://github.com/GitXBot101/File-Converter-Bot"
+  "repository": "https://github.com/GitXBot101/File-Converter-Bot", 
+  "success_url": "https://t.me/cartoon_seriesz",
+  "website": "https://github.com/dakshkohli23",
   "env": {
     "ID": {
       "description": "Telegram Api ID",

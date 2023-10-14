@@ -1,30 +1,61 @@
 {
-  "name": "AI Telegram Bot",
-  "description": "Telegram's best Open Source AI Bot. Create your Fork now.",
+  "name": "Sharingan Rename Bot",
+  "description": "Telegram's best Open Source Rename Bot. Create your Fork now.",
   "logo": "https://p1.hiclipart.com/preview/401/429/117/sharingan-all-files-mangekyo-sharingan.jpg",
   "keywords": [
     "telegram",
     "best",
     "open",
     "source",
-    "AI"
+    "Rename"
   ],
-  "repository": "https://github.com/GitXBot101/File-Converter-Bot", 
   "success_url": "https://t.me/cartoon_seriesz",
   "website": "https://github.com/dakshkohli23",
+  "repository": "https://github.com/GitXBot101/File-Converter-Bot",
   "env": {
-    "ID": {
-      "description": "Telegram Api ID",
-      "value": ""
+    "WEBHOOK": {
+      "description": "Setting this to ANYTHING will enable webhooks when in env mode",
+      "value": "ANYTHING"
     },
     "TOKEN": {
       "description": "Your bot token, as a string.",
       "value": ""
     },
-    "HASH": {
-      "description": "Telegram API Hash",
+    "UPDATE_CHANNEL": {
+      "description": "For Force Subscribe. Paste your Update channel USERNAME (without @).. Also Make The Bot Admin In That Channel!! ",
       "value": ""
     },
+    "LOG_CHANNEL": {
+      "description": "For Storing Incoming Files In A Channel Add A channel Username without @ Here!",
+      "value": ""
+    },
+    "ID": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": ""
+    },
+    "HASH": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": ""
+    },
+    "AUTH_USERS": {
+      "description": "allow only pre-defined users to use this bot",
+      "value": ""
+    },
+    "BANNED_USERS": {
+      "description": "Banned Unwanted members..",
+      "value": "",
+      "required": false
+    },
+    "CHUNK_SIZE": {
+      "description": "chunk size that should be used with requests",
+      "value": "128",
+      "required": false
+    }
+  },
+  "buildpacks": [
+    {"url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"},
+    {"url": "heroku/python"}
+  ],
   "formation": {
     "worker": {
       "quantity": 1,

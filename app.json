@@ -9,7 +9,7 @@
     "source",
     "AI"
   ],
-  "repository": "https://github.com/GitXBot101/File-Converter-Bot",
+  "repository": "https://github.com/GitXBot101/File-Converter-Bot"
   "env": {
     "ID": {
       "description": "Telegram Api ID",
